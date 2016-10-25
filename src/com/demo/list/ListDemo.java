@@ -17,11 +17,15 @@ public class ListDemo {
 
 		System.out.println("Printing list....");
 		System.out.println(stdList);
-		
-		System.out.println("Iterating list....");
+
+		System.out.println("Iterating list using Iterator interface....");
 		Iterator<Student> stdItr = stdList.iterator();
-		while(stdItr.hasNext()){
+		while (stdItr.hasNext()) {
 			System.out.println(stdItr.next());
+		}
+		System.out.println("Iterating using for loop...");
+		for (Student std : stdList) {
+			System.out.println(std.toString());
 		}
 	}
 
