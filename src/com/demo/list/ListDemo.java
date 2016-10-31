@@ -23,6 +23,8 @@ public class ListDemo {
 		while (stdItr.hasNext()) {
 			System.out.println(stdItr.next());
 		}
+		//Check object in list
+		Student std1 = new Student(1001,"Emran Hossain","Tongi, Gazipur");
 		System.out.println("Iterating using for loop...");
 		for (Student std : stdList) {
 			System.out.println(std.toString());
